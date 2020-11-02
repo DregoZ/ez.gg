@@ -1,0 +1,24 @@
+Los USUARIOS pueden registrarse en la web. De un usuario es relevante su login y su password. Además, se almacenará su ‘display name’, un email, 
+una imagen de avatar y una breve descripción (bio).
+
+Los JUEGOS no se almacenarán en la BD, si no que se harán querys para recibir los datos (devuelve formato JSON). De estos juegos es relevante su ID (PK?),
+pues nos servirá como enlace con los usuarios, etc.
+
+Los JUEGOS tienen varios ESTADOS (deseado, jugando, terminado, completado,  pospuesto, abandonado). Cada USUARIO tendrá uno o ninguno de estos estados asignado 
+a cada JUEGO.
+
+Un USUARIO puede crear LISTAS PERSONALIZADAS, a las que se puede asignar un nombre cualquiera y añadir JUEGOS (hasta un máximo de 100). 
+
+Un USUARIO puede RESEÑAR y/o PUNTUAR un JUEGO. Solo podrá asignar una puntuación y/o una reseña a cada JUEGO. 
+
+Las LISTAS y RESEÑAS podrán ser puntuadas de forma positiva o negativa. Este balance determinará el orden de aparición de las mismas en ciertas partes de la web.
+  Funcionalidad: clonar LISTAS de otros USUARIOS.
+
+Al explorar un JUEGO, se mostrarán los USUARIOS que están jugando (ESTADO) actualmente, además de su MEDIA DE PUNTUACIÓN (calculada a partir de las puntuaciones 
+de los usuarios), las RESEÑAS del mismo y en que LISTAS aparece.
+
+Un USUARIO puede tener a otros USUARIOS añadidos en una lista de SEGUIMIENTO, y puede consultar quienes le SIGUEN en cualquier momento (estilo twitter).
+
+En la página MAIN de un usuario, podrás acceder a su colección de juegos, a sus reseñas y listas. Se mostrarán las interacciones más recientes de otros USUARIOS 
+seguidos (+view all), sus últimas reseñas, listas etc. A través del botón EXPLORAR, se mostrarán los juegos con más interacciones, novedades, lanzamientos, etc.
+
