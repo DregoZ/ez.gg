@@ -29,9 +29,10 @@ Si clickamos un destes enlaces o recorrido será o seguinte:
         
         <code>Route::post('/busqueda', 'SearchController')->name('search');</code>
         
+        
       este controlador devolve varios datos á vista queryResults.blade.php. Nesta vista os datos mostraranse seguindo unha plantilla básica de html.
       
-      >> O código máis interesante:
+      + O código máis interesante:
         - Rutas (routes/app): web.php
         - Controladores (app/Http/Controllers): SearchController.php e GamePageController.php, e en menor medida MensajesController
         - Vistas (resources/views): querys/queryResults.blade.php e querys/gamepage.blade.php, e en menor medida nav.blade.php e emails/MensajeRecibido.blade.php
